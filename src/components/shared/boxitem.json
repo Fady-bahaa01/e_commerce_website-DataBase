@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_boxitems",
+  "info": {
+    "displayName": "boxitem"
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

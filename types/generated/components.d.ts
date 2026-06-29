@@ -1,0 +1,20 @@
+import type { Schema, Struct } from '@strapi/strapi';
+
+export interface SharedBoxitem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_boxitems';
+  info: {
+    displayName: 'boxitem';
+  };
+  attributes: {
+    quantity: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+declare module '@strapi/strapi' {
+  export module Public {
+    export interface ComponentSchemas {
+      'shared.boxitem': SharedBoxitem;
+    }
+  }
+}

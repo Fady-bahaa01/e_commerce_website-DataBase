@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "adress": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zip_code": {
+      "type": "decimal"
+    },
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "e_money",
+        "cash"
+      ]
+    },
+    "country": {
+      "type": "string"
+    },
+    "e_moneyPin": {
+      "type": "string"
+    },
+    "e_moneNumber": {
+      "type": "string"
+    }
+  }
+}
